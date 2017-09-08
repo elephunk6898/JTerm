@@ -175,7 +175,11 @@ public class JTerm
 		  	case "dir":
 		  		Dir.PrintDir(options);
 		  		break;
-			  
+              case "ls":
+                  Dir.PrintDir(options);
+                  //the UNIX version of dir
+                  break;
+
 		  	case "chdir":
 		  	case "cd":
 		  		Dir.ChangeDir(options);
@@ -193,6 +197,8 @@ public class JTerm
 		  	case "del":
 		  		Files.Delete(options);
 		  		break;
+              case "rm": //UNIX equivalent of del
+                  Files.Delete(options);
 		  		
 		  	case "md":
 		  		Dir.NewDir(options);
@@ -200,6 +206,7 @@ public class JTerm
 		  		
 		  	case "read":
 		  		break;
+
 		  		
 		  	/*case "connect":
 		  		Client.Connect(options);
