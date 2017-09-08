@@ -199,6 +199,7 @@ public class JTerm
 		  		break;
               case "rm": //UNIX equivalent of del
                   Files.Delete(options);
+                  break;
 		  		
 		  	case "md":
 		  		Dir.NewDir(options);
